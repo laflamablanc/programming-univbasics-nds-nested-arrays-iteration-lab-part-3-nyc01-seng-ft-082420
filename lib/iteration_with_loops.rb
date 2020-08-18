@@ -7,7 +7,7 @@ def join_nested_strings(src)
   while count < src.length 
     ic = 0 
     while ic < src[count].length
-      if alphabet.include?(src[count][ic][0])
+      if alphabet.include?(src[count][ic][0].to_s)
         string += src[count][ic]
         string += " "
       end
